@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SimpleDefine</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div>
+			<div class="components">
+				<nav>
+					<img src="logo.png" height="26" width="26" />
+					<h1>SimpleDefine</h1>
+				</nav>
+				<div class="input">
+					<input
+						type="text"
+						name="word"
+						id="word"
+						placeholder="Enter a word"
+					/>
+
+					<button class="submit" type="submit">Search</button>
+				</div>
+			</div>
+			<div class="output">
+				<div class="outputHeading">
+					<h3 class="outputHeadingName"></h3>
+					&nbsp;<span class="myAudio321" style="cursor: pointer"
+						><img
+							class="audioButton"
+							srcset="
+								https://img.icons8.com/?size=50&id=11408&format=png  1x,
+								https://img.icons8.com/?size=100&id=11408&format=png 2x
+							"
+							height="0"
+							width="0"
+					/></span>
+				</div>
+				<ol class="definitions"></ol>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"name": "SimpleDefine",
+	"manifest_version": 3,
+	"version": "1.0",
+	"author": ["Rakesh S, Ramalingam N"],
+	"permissions": ["tabs", "activeTab", "scripting", "storage"],
+	"description": "Digital Dictionary - Shows the meaning of selected word (by double click) in the web page",
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "logo.png",
+		"48": "logo.png",
+		"128": "logo.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	],
+	"action": {
+		"default_popup": "index.html"
+	}
+}
